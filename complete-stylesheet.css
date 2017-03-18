@@ -1,0 +1,283 @@
+/**
+ * Example of completed styles
+ *
+ * Module: HTML/CSS
+ * Lesson: 1,2
+ * Class: Scotland 2017
+ */
+
+html,
+body {
+	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.site-footer {
+	margin-top: 4em;
+}
+
+.site-footer p {
+	border-top: 1px solid #dccdc6;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.navbar-brand > img {
+	max-height: 40px;
+	width: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	padding-left: 1em;
+	padding-right: 1em;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	transition: border-color 0.2s;
+	color: #292b2c;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+	border-color: #ce5f31;
+	color: #292b2c;
+	outline: 0;
+}
+
+/* Buttons */
+.btn {
+	border-radius: 0.15em;
+}
+
+.btn-primary {
+	background: #ce5f31;
+	border-color: #ce5f31;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background: #ef7f52;
+	border-color: #ef7f52;
+	color: #fff;
+	box-shadow: none;
+}
+
+.btn-secondary {
+	border-color: #fff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	background: #ce5f31;
+	border-color: #ce5f31;
+	color: #fff;
+}
+
+/* Alert */
+.alert {
+	position: relative;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	border: 1px solid #dccdc6;
+	border-radius: 0;
+	font-size: 0.85rem;
+	line-height: 1.3em;
+	background: transparent;
+	color: #292b2c;
+}
+
+.alert:before {
+	content: '';
+	position: absolute;
+	left: -1px;
+	top: 0;
+	height: 100%;
+	width: 1px;
+	background: #ce5f31;
+}
+
+/* Jumbotron */
+.jumbotron {
+	position: relative;
+	background-image: url('jumbotron-background.jpg');
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 2em;
+	color: #fff;
+	border-radius: 0;
+}
+
+.jumbotron hr {
+	border-color: rgba(255,255,255,0.3);
+}
+
+.jumbotron .display-3 {
+	font-size: 3em;
+}
+
+.jumbotron .buttons {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.jumbotron .buttons .btn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	border-radius: 0;
+}
+
+.jumbotron .buttons .btn:last-child {
+	left: auto;
+	right: 0;
+}
+
+/* Headings */
+.heading-underline {
+	position: relative;
+	margin-bottom: 2em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #dccdc6;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.heading-underline:before {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 25%;
+	height: 1px;
+	max-width: 100px;
+	background: #ce5f31;
+}
+
+.primary-content .heading-underline {
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+/* Article */
+.article {
+	margin-bottom: 2em;
+}
+
+.article-title {
+	margin-bottom: 0.5em;
+	font-weight: 700;
+}
+
+.article-read-more a {
+	font-size: 0.85em;
+	font-weight: 700;
+	text-decoration: uppercase;
+}
+
+.article-read-more a:hover,
+.article-read-more a:focus {
+	text-decoration: none;
+}
+
+.article-read-more .fa {
+	margin-right: 0.5em;
+	color: #ce5f31;
+	transition: margin 0.3s;
+}
+
+.article-read-more a:hover .fa,
+.article-read-more a:focus .fa {
+	margin-right: 1em;
+}
+
+.article-read-more:last-child {
+	margin-bottom: 0;
+}
+
+.primary-content .article:first-child {
+	padding: 1em;
+	background: #ddd;
+}
+
+/* Sidebar articles */
+.sidebar-content {
+	line-height: 1.3em;
+}
+
+.sidebar-content .article .col > *:last-child {
+	margin-bottom: 0;
+}
+
+/* Facebook icon */
+.facebook-link {
+	margin-top: 4em;
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+.facebook-link:hover,
+.facebook-link:focus {
+	text-decoration: none;
+}
+
+.facebook-link .fa {
+	margin-right: 0.5em;
+	color: #3b5998;
+}
+
+@media screen and (min-width: 480px) {
+
+	.jumbotron {
+		padding-bottom: 4em;
+	}
+
+	.jumbotron .display-3 {
+		font-size: 4.5rem;
+	}
+
+	.jumbotron .buttons,
+	.jumbotron .buttons .btn {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		width: auto;
+	}
+
+	.jumbotron .buttons .btn {
+		border-radius: 0.15em;
+	}
+}
+
+/* Floated articles */
+@media screen and (min-width: 768px) {
+
+	.primary-content .articles:after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+
+	.primary-content .article {
+		float: left;
+		width: 50%;
+		padding: 1em;
+	}
+
+	.primary-content .article:first-child {
+		background: #ddd;
+	}
+}
+
+@media screen and (min-width: 992px) {
+
+	.navbar-brand > img {
+	   max-height: 80px;
+	}
+}
