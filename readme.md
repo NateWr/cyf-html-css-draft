@@ -1,4 +1,4 @@
-Here's a draft of the HTML/CSS portion of the first two lessons. The idea is to start with a simple page (`index.html`/`stylesheet.css`) and build it into a nicer page (`complete.html`/`complete-stylesheet.css`). I just took Bikes for Refugees and ran with it, but we may want to choose a Glasgow-based organisation instead, or a fake one!
+Here's a draft of the HTML/CSS portion of the first two lessons. The idea is to start with a simple page (`index.html`/`stylesheet.css`, see [screenshot](screenshot-start.png)) and build it into a nicer page (`complete.html`/`complete-stylesheet.css`, see [screenshot](screenshot-complete.png)). I just took Bikes for Refugees and ran with it, but we may want to choose a Glasgow-based organisation instead, or a fake one!
 
 The [Course Outline](course-outline.md) includes enough details that anyone should be able to run the class. I've tried to follow a pattern whereby the tutor demonstrates a new technique, and the students then have to apply that technique to something else on their own or in pairs.
 
