@@ -117,24 +117,10 @@ body {
 	font-size: 3em;
 }
 
-.jumbotron .buttons {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-}
-
-.jumbotron .buttons .btn {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 50%;
-	border-radius: 0;
-}
-
-.jumbotron .buttons .btn:last-child {
-	left: auto;
-	right: 0;
+.jumbotron .btn {
+	font-size: 0.85rem;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
 }
 
 /* Headings */
@@ -241,37 +227,44 @@ body {
 		font-size: 4.5rem;
 	}
 
-	.jumbotron .buttons,
-	.jumbotron .buttons .btn {
-		position: relative;
-		top: auto;
-		left: auto;
-		right: auto;
-		width: auto;
-	}
-
-	.jumbotron .buttons .btn {
-		border-radius: 0.15em;
+	.jumbotron .btn {
+		font-size: 1rem;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 	}
 }
 
 /* Floated articles */
 @media screen and (min-width: 768px) {
 
-	.primary-content .articles:after {
-		display: block;
-		content: '';
-		clear: both;
+	.primary-content .articles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	.primary-content .article {
-		float: left;
-		width: 50%;
 		padding: 1em;
+		width: 48%;
+		border: 1px solid #ddd;
 	}
 
 	.primary-content .article:first-child {
 		background: #ddd;
+	}
+
+	.sidebar-content article {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.sidebar-content .thumb {
+		width: 25%;
+	}
+
+	.sidebar-content .article-summary {
+		width: 70%;
 	}
 }
 
