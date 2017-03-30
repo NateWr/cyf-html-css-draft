@@ -5,11 +5,12 @@ This outline provides tips to help mentors guide students to the best answers or
 ## Code Walkthrough
 
 **Why don't we put everything in one file?**
+
 Discuss:
 - Keeping data separate from display
 - Keeping code organised into manageable parts
 - Syntax highlighting in code editors
-- Linting
+- Linting Tools
 - Working in large teams with narrow skill-sets
 
 ## Semantic HTML
@@ -24,15 +25,14 @@ HTML elements with the following classes should receive the following semantic t
 - `.site-footer` -> `<footer>`
 
 **Who benefits when we write "semantic" HTML?**
-Search engines, anyone with a visual impairment who uses a screen reader. Reinforce the distinction between data and display. Data should be accessible regardless of display.
+
+Search engines, anyone with a visual impairment who uses a screen reader. Reinforce the distinction between data and display. Data should be meaningful regardless of display.
 
 ## CSS Selectors
 
-Students may need more or less review depending on how much they remember from their application process. If students are struggling with the basics, have them go through this [CSS Introduction course](https://www.codecademy.com/courses/web-beginner-en-TlhFi/resume?curriculum_id=50579fb998b470000202dc8b), with mentors guiding them through.
+Students may need more or less review depending on how much they remember from their application process. If students are struggling with the basics, have them go through this [CSS Introduction course](https://www.codecademy.com/courses/web-beginner-en-TlhFi/resume?curriculum_id=50579fb998b470000202dc8b), starting with the CSS Syntax lesson. Mentors should help guide them through and identify where they're struggling.
 
-Students should set the button background color using the `.btn-primary` selector, and adjust the white button using the `.btn-secondary` selector.
-
-If they use the `.btn` selector, they'll effect both buttons. Use that as a lesson in how Object-Oriented CSS works and how to choose the right selector.
+Students should set the button background color using the `.btn-primary` selector, and adjust the white button using the `.btn-secondary` selector. If they use the `.btn` selector, they'll effect both buttons. When they do that, use it as a lesson in how Object-Oriented CSS works and how to choose the right selector.
 
 ## CSS Inheritance
 
